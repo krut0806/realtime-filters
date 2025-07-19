@@ -1,29 +1,20 @@
-# 🎥 Real-Time Webcam Filters with 2000s Aesthetic
-
-Apply cinematic and creative filters to your webcam stream in real-time using **Gradio** and **OpenCV**.
-
-Live demo: [🌐 Hugging Face Space](https://huggingface.co/spaces/your-username/realtime-filters)
-
----
-
-## ✨ Features
-
-- 🎛️ Real-time webcam input via Gradio
-- 🎞️ Filters inspired by 2000s movies:
-  - Soft Glow ✨
-  - Vintage Film 🎞️
-  - Blue Teal 🎬
-  - Matrix Green 🟩
-- 🧠 Classic computer vision filters:
-  - Grayscale, Canny Edge, Pencil Sketch, Cartoon, Sepia, Invert
-- 💡 Powered by OpenCV + NumPy
-
----
-
-## 📦 Installation
-
-```bash
-git clone https://github.com/your-username/realtime-filters.git
-cd realtime-filters
-pip install -r requirements.txt
-python app.py
+🎥 Realtime Filters with Webcam
+A real-time webcam app built using Gradio and OpenCV that allows users to apply fun filters (like sketch, cartoon, sepia, etc.) to their live camera feed.
+🌐 Live Website: https://kruthikareddy-k-realtime-filters.hf.space
+🚀 Features
+🎨 Apply filters to your live webcam feed in real time
+📸 Capture images with selected filters
+⚡ Instant output preview in the browser
+🌈 Simple UI, works entirely in-browser (no install needed)
+🛠 How to Use
+Visit the live website 👉 Realtime Filters
+Click "📸 Capture from Webcam" to open your webcam.
+Choose a filter from the dropdown.
+Press "Submit" to apply the filter.
+View the filtered image instantly below the input.
+Optionally, download or screenshot the result.
+🧑‍💻 Tech Stack
+Python
+OpenCV
+Gradio
+NumPy
