@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-# === Basic Filters ===
+
 
 def apply_grayscale(image):
     gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
@@ -41,7 +41,6 @@ def apply_cartoon(image):
     cartoon = cv2.bitwise_and(color, color, mask=edges)
     return cv2.cvtColor(cartoon, cv2.COLOR_BGR2RGB)
 
-# === 2000s-Inspired Filters ===
 
 def apply_blue_teal(image):
     img_bgr = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
@@ -53,7 +52,7 @@ def apply_blue_teal(image):
 
 def apply_matrix_green(image):
     green = np.zeros_like(image)
-    green[:, :, 1] = image[:, :, 1]  # Only keep green channel
+    green[:, :, 1] = image[:, :, 1] 
     return green
 
 def apply_vintage_film(image):
@@ -66,7 +65,7 @@ def apply_vintage_film(image):
     filtered = cv2.GaussianBlur(filtered, (3, 3), 0)
     return cv2.cvtColor(filtered, cv2.COLOR_BGR2RGB)
 
-# === Soft Glow Filter ===
+
 
 def apply_soft_glow(image):
     img_bgr = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
