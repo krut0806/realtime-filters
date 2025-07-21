@@ -2,7 +2,7 @@ import gradio as gr
 import cv2
 import numpy as np
 
-# --- Filter Functions ---
+
 def apply_grayscale(image):
     gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
     return cv2.cvtColor(gray, cv2.COLOR_GRAY2RGB)
@@ -66,7 +66,7 @@ def apply_soft_glow(image):
     glow = np.clip(glow * 255, 0, 255).astype(np.uint8)
     return glow
 
-# --- Filter Dispatcher ---
+
 def apply_filter(image, filter_name):
     if image is None:
         return None
@@ -84,7 +84,7 @@ def apply_filter(image, filter_name):
     }
     return filters.get(filter_name, lambda x: x)(image)
 
-# --- UI ---
+
 filter_options = [
     "None",
     "Grayscale",
