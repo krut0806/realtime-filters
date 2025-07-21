@@ -100,15 +100,15 @@ filter_options = [
 ]
 
 with gr.Blocks() as demo:
-    gr.Markdown("## 🎥 Real-Time Webcam Filters (2000s Aesthetic)")
+    gr.Markdown("##  Real-Time Webcam Filters (2000s Aesthetic)")
 
     with gr.Row():
-        webcam = gr.Image(label="📸 Webcam Snapshot", type="numpy")
+        webcam = gr.Image(label="Webcam Snapshot", type="numpy")
         filter_choice = gr.Dropdown(choices=filter_options, value="None", label="🎛️ Choose a Filter")
 
-    output = gr.Image(label="🖼️ Filtered Output")
+    output = gr.Image(label=" Filtered Output")
 
-    apply_btn = gr.Button("✨ Apply Filter")
+    apply_btn = gr.Button(" Apply Filter")
 
     def run_filter(img, choice):
         if choice == "None":
